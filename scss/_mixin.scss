@@ -1,0 +1,308 @@
+//main mixins
+@mixin section-title {
+    font-size: 1.125rem;
+    color: $brown;
+    text-transform: uppercase;
+}
+
+// top bar
+@mixin topbar {
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    padding: 0;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-align: center;
+    max-width: 80rem;
+}
+
+@mixin topbar-link {
+    padding: 0;
+    width: 100%;
+    line-height: 6rem;
+    font-size: 1.2vw;
+    color: $black;
+    text-transform: uppercase;
+    font-family: $muli;
+}
+
+//mobile menu mixins
+@mixin mobile-toggle {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+}
+
+@mixin menu-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 50px;
+    height: 36px;
+    outline: none;
+}
+
+@mixin menu-icon-after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $black;
+    top: 0;
+    left: 0;
+    box-shadow: 0 18px 0 $black, 0 36px 0 $black;
+}
+
+@mixin menu-icon-hover-after {
+    background: $black;
+    box-shadow: 0 18px 0 $black, 0 36px 0 $black;
+}
+
+@mixin vertical-menu-link {
+    text-transform: uppercase;
+    color: $black;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid $brown;
+}
+
+@mixin hover-underline {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+
+@mixin hover-under-line-before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: $brown;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+//send modal form 
+@mixin send-modal {
+    width: 40%;
+    height: auto;
+    padding: 2.5rem 1rem 1rem;
+    background: $modal-bg;
+    text-align: center;
+}
+
+@mixin send-modal-title {
+    text-transform: uppercase;
+    color: $brown;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+
+@mixin send-modal-btn {
+    background: $brown;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+//slider section
+@mixin gallery {
+    width: 102.14%;
+    height: 557px;
+    background: url("../img/bg/slider-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
+    margin-right: 10px;
+}
+
+@mixin gallery-dots {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 0;
+}
+
+@mixin gallery-text {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@mixin gallery-title {
+    height: 215px;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    line-height: 215px;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+@mixin gallery-h1 {
+    font-size: 1.85rem;
+    color: $white;
+    padding: 3rem 27%;
+    line-height: 40px;
+    display: inline-block;
+}
+
+@mixin contact-vertical-btn {
+    position: absolute;
+    top: 76px;
+    right: -40px;
+    width: 115px;
+    height: 37px;
+    background: $brown;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 999;
+    cursor: pointer;
+    -ms-transform: rotate(270deg);
+    /* IE 9 */
+    -moz-transform: rotate(270deg);
+    /* Firefox */
+    -webkit-transform: rotate(270deg);
+    /* Safari and Chrome */
+    -o-transform: rotate(270deg);
+    /* Opera */
+}
+
+//about project
+@mixin project-text {
+    font-size: 0.875rem;
+    line-height: 22px;
+    padding-right: 4rem;
+}
+
+@mixin project-btn {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    padding: .65em 1em;
+    border: 1px solid $darkgray;
+    background-color: transparent;
+    color: $black;
+    font-size: 0.75rem;
+}
+
+//slider 
+@mixin slider-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin slider-arrow-left {
+    border-left: 2px solid $brown;
+    border-bottom: 2px solid $brown;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+}
+
+@mixin slider-arrow-right {
+    border-right: 2px solid $brown;
+    border-bottom: 2px solid $brown;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+@mixin slider-arrow-left-mobile {
+    width: 40px;
+    height: 40px;
+    border-left: 2px solid $white;
+    border-bottom: 2px solid $white;
+}
+
+@mixin slider-arrow-right-mobile {
+    width: 40px;
+    height: 40px;
+    border-right: 2px solid $white;
+    border-bottom: 2px solid $white;
+}
+
+//table 
+@mixin table-section {
+    background: $gray;
+    width: 100%;
+    max-width: 100%;
+    padding: 3.75rem 4rem;
+}
+
+@mixin table-main {
+    background: transparent;
+    border: 1px solid $brown;
+    text-align: center;
+    color: $brown;
+}
+
+//form 
+@mixin form-section {
+    max-width: 100%;
+    background-image: url('../img/bg/form-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 3.75rem 0;
+}
+
+@mixin input-radio-before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+@mixin select-field {
+    color: $white;
+    background-color: $input-bg;
+    border: 0;
+    outline: none;
+}
+
+@mixin form-submit-btn {
+    background: $white;
+    text-transform: uppercase;
+    color: $brown;
+}
+
+//footer 
+@mixin footer-section {
+    width: 100%;
+    background: $footer-bg;
+    text-align: center;
+    padding: 0.5rem 0;
+}

@@ -1,0 +1,370 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/motion-ui/dist/motion-ui.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/app.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!-- Top bar -->
+    <!-- Responsive mobile toggle -->
+    <div class="mobile-toggle show-for-small-only">
+        <div class="mobile-toggle-logo"><img src="img/logo.png" alt=""></div>
+        <div class="mobile-toggle-icon">
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle></button>
+            </div>
+        </div>
+    </div>
+    <nav class="mobile-menu">
+        <div class="menu-container">
+            <div class="top-bar" id="example-menu">
+                <div class="top-bar-right">
+                    <ul class="menu vertical" class="dropdown menu" data-dropdown-menu>
+                        <li><a class="hover-underline" href="#">о проекте</a></li>
+                        <li><a class="hover-underline" href="#">расположение</a></li>
+                        <li><a class="hover-underline" href="#">квартиры</a></li>
+                        <li><a class="hover-underline" href="#">дизайн</a></li>
+                        <li><a class="hover-underline" href="#">преймушества</a></li>
+                        <li><a class="hover-underline" href="#">новости</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--//END Responsive mobile toggle -->
+    <nav class="topbar menu">
+        <li>
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </li>
+        <li class="active"><a href="#"> о проекте</a></li>
+        <li><a href="#">расположение </a></li>
+        <li><a href="#">квартиры</a></li>
+        <li><a href="#">дизайн</a></li>
+        <li><a href="#">преймущества</a></li>
+        <li><a href="#">новости</a></li>
+        <li class="topbar-lang"><a href="#" class="topbar-lang-link"><span id="lang-en">en</span> | <span id="lang-rus">рус</span></a></li>
+        <li class="topbar-phone">
+            <a href="#" id="topbar-phone-link"><img src="img/icon-phone.png" alt=""> +38 (097) 324-98-09</a>
+        </li>
+    </nav>
+    <!--//END  top baer -->
+    <!-- MAIN SLIDER -->
+    <section class="gallery-main">
+        <div class="gallery-slider">
+            <!-- vertical button for contact  -->
+            <div class="contact-button" data-open="exampleModal1">
+                <p>связаться</p>
+            </div>
+            <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+                <div class="gallery-cell">
+                    <div class="gallery-text">
+                        <div class="gallery-title">
+                            <h1>Атмосферa загородного дома в престижном районе</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="gallery-text">
+                        <div class="gallery-title">
+                            <h1>Атмосферa загородного дома в престижном районе</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="gallery-text">
+                        <div class="gallery-title">
+                            <h1>Атмосферa загородного дома в престижном районе</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact send modal -->
+    <div class="send-modal reveal" id="exampleModal1" data-reveal>
+        <div class="send-modal-box">
+            <div class="send-modal-item">
+                <h2>Форма для заполнения</h2>
+            </div>
+            <div class="send-modal-item">
+                <input type="text" placeholder="Имя">
+            </div>
+            <div class="send-modal-item">
+                <input type="tel" placeholder="Телефон">
+            </div>
+            <div class="send-modal-item">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="send-modal-item">
+                <textarea name="" id="" cols="30" rows="3" placeholder="Текст"></textarea>
+            </div>
+            <div class="send-modal-item">
+                <input id="subscribe-modal" type="checkbox">
+                <label for="subscribe-modal">подписаться на рассылку</label>
+            </div>
+            <div class="send-modal-botton">
+                <button type="submit" class="button">отправить</button>
+            </div>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!--//end contact modal -->
+    <!--//END MAIN SLIDER -->
+    <!-- ABOUT PROJECT -->
+    <article class="project">
+        <div class="project-title">
+            <h2>o проекте</h2>
+        </div>
+        <div class="project-content">
+            <div class="project-img"><img src="img/project-img.png" alt=""></div>
+            <div class="project-text">
+                <p>Премиальная недвижимость стала инструментом конвертации денег. К такому выводу пришли специалисты Kalinka Group, подводя итоги очередного этапа развития рынка элитной недвижимости на пресс-конференции, прошедшей 14 апреля в ресторане Nabi. Эксперты отмечают, что гибкость в кризис помогает девелоперам создавать уникальный и востребованный продукт: «Когда мы начали работать над проектом два года назад, коллеги порекомендовали обратить внимание на увеличение спроса на жилье.</p>
+                <div class="project-btn"><a href="#" class="button">побробнее</a></div>
+            </div>
+        </div>
+    </article>
+    <!-- //END ABOUT PROJECT -->
+    <!-- SLIDER CHOOSE your flat -->
+    <section class="slider-section">
+        <div class="slider-title">
+            <h2>Выберите свою квартиру</h2>
+        </div>
+        <div class="slider-container">
+            <div class="slider-carousel owl-theme" id="owl-carousel">
+                <div class="slider-item"><img src="img/home-1.png" alt=""></div>
+                <div class="slider-item"><img src="img/home-2.png" alt=""></div>
+                <div class="slider-item"><img src="img/home-3.png" alt=""></div>
+                <div class="slider-item"><img src="img/home-4.png" alt=""></div>
+                <div class="slider-item"><img src="img/home-1.png" alt=""></div>
+                <div class="slider-item"><img src="img/home-2.png" alt=""></div>
+                <div class="slider-item"><img src="img/home-3.png" alt=""></div>
+                <div class="slider-item"><img src="img/home-4.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!--//END SLIDER CHOOSE your flat -->
+    <!-- TABLE -->
+    <section class="table">
+        <div class="table-title">
+            <h2>Таблица</h2>
+        </div>
+        <table class="table-main">
+            <thead>
+                <tr class="table-main-row">
+                    <th width="25%" class="table-main-head">Проекты</th>
+                    <th width="10%" class="table-main-head">Текст</th>
+                    <th width="10%" class="table-main-head">Текст</th>
+                    <th width="20%" class="table-main-head">Текст</th>
+                    <th width="10%" class="table-main-head">Текст</th>
+                    <th width="25%" class="table-main-head">Текст</th>
+                </tr>
+            </thead>
+            <tr class="table-main-row">
+                <td class="table-main-data">Проект</td>
+                <td class="table-main-data" rowspan="7">Teкст</td>
+                <td class="table-main-data">Teкст</td>
+                <td rowspan="2">Teкст</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+            </tr>
+            <tr class="table-main-row">
+                <td class="table-main-data">Проект</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+            </tr>
+            <tr class="table-main-row">
+                <td class="table-main-data">Проект</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+            </tr>
+            <tr class="table-main-row">
+                <td class="table-main-data">Проект</td>
+                <td class="table-main-data">Текст</td>
+                <td rowspan="2">Текст</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+            </tr>
+            <tr class="table-main-row">
+                <td class="table-main-data">Проект</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+            </tr>
+            <tr class="table-main-row">
+                <td class="table-main-data">Проект</td>
+                <td class="table-main-data">Текст</td>
+                <td rowspan="2">Текст</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+            </tr>
+            <tr class="table-main-row">
+                <td class="table-main-data">Проект</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+                <td class="table-main-data">Текст</td>
+            </tr>
+        </table>
+    </section>
+    <!--//END TABLE -->
+    <!-- FORM register -->
+    <section class="form">
+        <div class="form-container">
+            <div class="form-container-title">
+                <h2>Отправить заявку на проект</h2>
+            </div>
+            <div class="form-container-fields">
+                <div class="form-container-fields-item">
+                    <input type="text" placeholder="Имя">
+                </div>
+                <div class="form-container-fields-item">
+                    <input type="tel" placeholder="Телефон">
+                </div>
+                <div class="form-container-fields-item">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="form-container-fields-item">
+                    <div class="radio-row">
+                        <div class="radio-row-label">
+                            <label for="right-label" class="text-right"><i>Выбрать:</i></label>
+                        </div>
+                        <div class="radio-row-fields">
+                            <div>
+                                <input type="radio" name="variant" value="first" id="variant1" required>
+                                <label for="variant1"><i>1 вариант</i></label>
+                            </div>
+                            <div>
+                                <input type="radio" name="variant" value="secon" id="variant2">
+                                <label for="variant2"><i>2 вариант</i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container-fields-item">
+                    <select>
+                        <option value="">Город</option>
+                        <option value="kiev">Kiev</option>
+                        <option value="lviv">Lviv</option>
+                        <option value="Chernovcy">Chernovcy</option>
+                    </select>
+                </div>
+                <div class="form-container-fields-item">
+                    <div class="checkbox-row">
+                        <div class="checkbox-row-label">
+                            <label for="right-label" class="text-right"><i>Выбрать:</i></label>
+                        </div>
+                        <div class="checkbox-row-fields">
+                            <div>
+                                <input id="checkbox1" type="checkbox">
+                                <label for="checkbox1"><i>1 вариант</i></label>
+                            </div>
+                            <div>
+                                <input id="checkbox2" type="checkbox">
+                                <label for="checkbox2"><i>2 вариант</i></label>
+                            </div>
+                            <div>
+                                <input id="checkbox3" type="checkbox">
+                                <label for="checkbox3"><i>3 вариант</i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container-fields-item">
+                    <button type="submit" class="expanded button">Отправить заявку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END FORM  register-->
+    <!-- contact section -->
+    <section class="contacts">
+        <div class="contacts-title">
+            <h2>Контакты</h2>
+        </div>
+        <div class="contacts-info">
+            <div class="contacts-info-row">
+                <div class="contacts-info-row-item">
+                    <h3>Связаться</h3>
+                    <p>+380 44 222 88 44</p>
+                    <p>+380 67 555 55 15</p>
+                    <p>office@build.com.ua</p>
+                </div>
+                <div class="contacts-info-row-item">
+                    <h3>Адресс</h3>
+                    <p>03035, Украина, Киев</p>
+                    <p>ул. Мехнизаторов 3, офис 310</p>
+                </div>
+                <div class="contacts-info-row-item">
+                    <h3>Для прессы</h3>
+                    <p>+380 93 997 38 73</p>
+                    <p>g@build.com.ua</p>
+                    <p>office@build.com.ua</p>
+                </div>
+                <div class="contacts-info-mobile show-for-small-only">
+                    <div class="contacts-info-mobile-item">
+                        <p>+380 44 222 88 44</p>
+                        <p>+380 67 555 55 15 </p>
+                    </div>
+                    <div class="contacts-info-mobile-item">
+                        <p>Украина, Киев</p>
+                        <p>ул. Мехнизаторов 3, офис 310</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-social">
+            <div class="contacts-social-group">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--//END CONTACT -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer-copyright">&#169; 2015 J.Horing gmbh</p>
+        <div class="footer-social-group show-for-small-only">
+            <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+    <!--//END FOOTER -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="bower_components/motion-ui/dist/motion-ui.js"></script>
+    <!-- endbower -->
+    <script src="js/flickity.pkgd.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="js/app.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
